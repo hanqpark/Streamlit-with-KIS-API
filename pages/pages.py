@@ -22,7 +22,7 @@ def intro(page_names_to_funcs, kis, target_percents):
     st.image('images/kis_open_api.png')
     st.markdown(
         """
-        ###Streamlit
+        ### Streamlit
         - Streamlit은 Data Science 프로젝트를 위해 만들어진 Open-source app framework 입니다.
         - 사용자가 작성한 Data script를 Wep App으로 변환하여 쉽고 빠르게 공유할 수 있습니다.
         - Front-end를 몰라도 오직 Python으로만 구현 및 실행이 가능합니다.
