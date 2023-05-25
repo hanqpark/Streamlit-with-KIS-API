@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from kisapi import KoreaInvestment
 from pages import *
 
@@ -30,10 +30,13 @@ target_pct_usa = {
 }
 
 if __name__ == "__main__":
-    load_dotenv()
-    API_KEY = os.environ.get("SIMUL_KEY")
-    API_SEC = os.environ.get("SIMUL_SEC")
-    ACC_NUM = os.environ.get("SIMUL_ACC")
+    # load_dotenv()
+    # API_KEY = os.environ.get("SIMUL_KEY")
+    # API_SEC = os.environ.get("SIMUL_SEC")
+    # ACC_NUM = os.environ.get("SIMUL_ACC")
+    API_KEY = st.secrets["SIMUL_KEY"]
+    API_SEC = st.secrets["SIMUL_SEC"]
+    ACC_NUM = st.secrets["SIMUL_ACC"]
 
     kis_kor = KoreaInvestment(api_key=API_KEY, api_secret=API_SEC, acc_no=ACC_NUM, mock=True)
     kis_usa = KoreaInvestment(api_key=API_KEY, api_secret=API_SEC, acc_no=ACC_NUM, mock=True, exchange="미국전체")
