@@ -95,11 +95,7 @@ def rebalancing_kor(page_names_to_funcs, kis, target_percents):
     """
     st.markdown(f'# {list(page_names_to_funcs.keys())[1]}')
     st.sidebar.success("다른 예시를 선택해 보세요")
-    st.write(
-        """
-        Hello World!
-        """
-    )
+
     st.write('## 현재 포트폴리오')
     st.write(total_df)
     
@@ -169,11 +165,7 @@ def rebalancing_usa(page_names_to_funcs, kis, target_percents):
     """
     st.markdown(f"# {list(page_names_to_funcs.keys())[2]}")
     st.sidebar.success("다른 예시를 선택해 보세요")
-    st.write(
-        """
-        Hello World!
-        """
-    )
+
     st.write('## 현재 포트폴리오')
     st.write(total_df)
     
@@ -191,11 +183,7 @@ def rebalancing_usa(page_names_to_funcs, kis, target_percents):
 def backtesting_kor(page_names_to_funcs, kis, target_percents=None):
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
     st.sidebar.success("다른 예시를 선택해 보세요")
-    st.write(
-        """
-        한국주식으로 변동성 돌파매매 백테스팅 구현
-        """
-    )
+
     # Define the start and end dates for the backtest
     start_date = st.sidebar.date_input("시작 날짜", datetime.date(2019, 1, 1))
     end_date = st.sidebar.date_input("종료 날짜", datetime.date(2023, 1, 1))
@@ -223,11 +211,7 @@ def backtesting_kor(page_names_to_funcs, kis, target_percents=None):
 def backtesting_usa(page_names_to_funcs, kis, target_percents=None):
     st.markdown(f"# {list(page_names_to_funcs.keys())[4]}")
     st.sidebar.success("다른 예시를 선택해 보세요")
-    st.write(
-        """
-        미국주식으로 변동성 돌파매매 백테스팅 구현
-        """
-    )
+
     # Define the start and end dates for the backtest
     start_date = st.sidebar.date_input("시작 날짜", datetime.date(2019, 1, 1))
     end_date = st.sidebar.date_input("종료 날짜", datetime.date(2023, 1, 1))
