@@ -14,7 +14,7 @@ def intro(page_names_to_funcs, kis, target_percents):
         """
         ### 한국투자 Open API
         - 한국투자증권의 트레이딩 서비스를 Open API로 제공하여 개발자들이 다양한 금융 서비스를 만들 수 있도록 지원합니다. 
-        - KIS Developers 사이트 내 [API 문서](https://apiportal.koreainvestment.com/apiservice/oauth2#L_5c87ba63-740a-4166-93ac-803510bb9c02)
+        - KIS Developers 사이트 내 [API 문서](https://apiportal.koreainvestment.com/apiservice)
         에서 상세한 설명와 예제를 통해 전문 개발자가 아닌 일반인들도 쉽게 금융 서비스를 만들 수 있습니다.
         - 한국투자 Open API의 특장점은 다음과 같습니다.
         """
@@ -22,7 +22,7 @@ def intro(page_names_to_funcs, kis, target_percents):
     st.image('images/kis_open_api.png')
     st.markdown(
         """
-        ### Streamlit
+        ###Streamlit
         - Streamlit은 Data Science 프로젝트를 위해 만들어진 Open-source app framework 입니다.
         - 사용자가 작성한 Data script를 Wep App으로 변환하여 쉽고 빠르게 공유할 수 있습니다.
         - Front-end를 몰라도 오직 Python으로만 구현 및 실행이 가능합니다.
@@ -30,11 +30,11 @@ def intro(page_names_to_funcs, kis, target_percents):
     )
     st.markdown(
         """
-        ### Want to learn more?
-
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community forums](https://discuss.streamlit.io)
+        ### 참고한 사이트
+        - [KIS Developers API Documentation](https://apiportal.koreainvestment.com/apiservice)
+        - [파이썬을 이용한 한국/미국 주식 자동매매 시스템](https://wikidocs.net/book/7845)
+        - [Mojito 파이썬 라이브러리](https://github.com/sharebook-kr/mojito)
+        - [Streamlit API Documentation](https://docs.streamlit.io)
         """
     )
 
